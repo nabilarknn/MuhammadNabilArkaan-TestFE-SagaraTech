@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.container {
+  display: flex;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.left {
+  flex: 2;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 165px;
+  height: 55px;
+}
+
+.login {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: 400;
+  font-size: 14;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="email"],
+.input-group input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  width: 300px;
+}
+
+.password-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 10px;
+  background-color: #0269bf;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 325px;
+  height: 36px;
+}
+
+.btn:hover {
+  background-color: #f6712a;
+}
+
+.right {
+  flex: 8;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.right img {
+  width: auto;
+  height: auto;
+  flex-grow: 1;
+  max-height: 100vh;
+}
+
+/* mobile screen */
+@media (max-width: 768px) {
+  .input-group input[type="email"],
+  .input-group input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    width: 320px;
+  }
+  .btn {
+    margin-top: 10px;
+    background-color: #0269bf;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 340px;
+    height: 36px;
+  }
+
+  .right {
+    display: none;
+  }
+}
